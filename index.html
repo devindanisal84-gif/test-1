@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AGHORA - Premium technical streetwear and high-fashion urban wear. Designed in the urban core for creators and rule-breakers."
+    />
+    <meta
+      name="keywords"
+      content="streetwear, techwear, urban clothing, oversized hoodie, cargo pants, graphic tees, premium fashion"
+    />
+    <title>AGHORA | Own The Streets</title>
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Premium Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <body>
+    <!-- Background Video -->
+    <div class="video-background-container">
+        <video autoplay loop muted playsinline id="bg-video">
+            <source src="IMG_6964.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Analog Grain Noise Overlay -->
+    <div class="red-overlay"></div>
+    
+    </div>
+
+
+    <!-- Analog Grain Noise Overlay -->
+    <div class="red-overlay"></div>
+    <!-- Analog Grain Noise Overlay -->
+    <div class="red-overlay"></div>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-ring"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Page Loading Screen -->
+    <div id="loader">
+      <div class="loader-brand">AGH<span>O</span>RA</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header id="mainHeader">
+      <a href="#home" class="nav-brand">AGH<span>O</span>RA</a>
+
+      <nav class="nav-links-desktop">
+        <a href="#home">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Search Toggle Trigger -->
+        <button class="nav-btn" id="searchToggleBtn" aria-label="Search items">
+          <i class="fas fa-search"></i>
+        </button>
+
+        <!-- Shopping Cart Trigger -->
+        <button
+          class="nav-btn"
+          id="cartToggleBtn"
+          aria-label="Open shopping cart"
+        >
+          <div class="cart-icon-wrapper">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-indicator" id="cartIndicatorCount">0</span>
+          </div>
+        </button>
+
+        <!-- Mobile Menu Toggle Trigger -->
+        <button
+          class="nav-btn mobile-menu-toggle"
+          id="mobileMenuToggleBtn"
+          aria-label="Toggle navigation menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Inline Navigation Search Bar -->
+      <div class="search-overlay-bar" id="searchOverlayBar">
+        <input
+          type="text"
+          class="search-input-field"
+          id="searchInput"
+          placeholder="SEARCH PRODUCTS..."
+          autocomplete="off"
+        />
+        <button class="search-close-btn" id="searchCloseBtn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-menu-drawer" id="mobileMenuDrawer">
+      <div class="mobile-drawer-header">
+        <span class="nav-brand">AGH<span>O</span>RA</span>
+        <button class="mobile-drawer-close-btn" id="mobileMenuCloseBtn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul class="mobile-menu-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero / Split Banner Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-glow-element"></div>
+      <div class="hero-container">
+        <div class="hero-left reveal-element">
+          <div class="hero-tag">Core Collection v2.0</div>
+          <h1 class="hero-title">OWN THE<br /><span>STREETS</span>.</h1>
+          <p class="hero-desc">
+            High-grade technical outerwear and statement layering designed in
+            NY. Blending extreme utility with raw, modern streetwear
+            architecture.
+          </p>
+          <div class="hero-actions">
+            <a href="#shop" class="btn-cta btn-cta-lime">Shop Current Drop</a>
+            <a href="#collections" class="btn-cta btn-cta-white"
+              >Explore Collections</a
+            >
+          </div>
+        </div>
+        <div class="hero-right reveal-element delay-2">
+          <div class="hero-image-wrapper">
+            <img src="static_img/urban.jpg" /> alt="AGHORA Streetwear Tech
+            Jacket">
+            <div class="hero-img-badge">CORE DROP / 26</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collections Section -->
+    <section class="collection-section" id="collections">
+      <div class="section-header reveal-element">
+        <h2 class="section-title">FEATURED<br />CATEGORIES</h2>
+        <div class="section-subtitle">
+          A curated exploration of comfort, techwear, and custom graphic
+          artwork.
+        </div>
+      </div>
+      <div class="collections-container">
+        <!-- Category 1 -->
+        <div class="collection-banner reveal-element delay-1">
+          <img src="IMG_6838.PNG" alt="Oversized T-SHIRTS" />
+          <div class="collection-overlay">
+            <h3>Oversized T-SHIRTS</h3>
+            <p>Heavyweight luxury French Terry blends.</p>
+            <a
+              href="#shop"
+              class="collection-link"
+              data-filter-category="hoodie"
+              >View Drop <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Category 2 -->
+        <div class="collection-banner reveal-element delay-2">
+          <img
+            src="ChatGPT Image Jun 29, 2026, 06_42_35 PM.png"
+            alt="Graphic Tees"
+          />
+          <div class="collection-overlay">
+            <h3>GRAPHIC TEES</h3>
+            <p>Raw prints, cyber motifs, and vintage washes.</p>
+            <a
+              href="#shop"
+              class="collection-link"
+              data-filter-category="tshirt"
+              >View Drop <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Category 3 -->
+        <div class="collection-banner reveal-element delay-3">
+          <img
+            src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&q=80"
+            alt="Cargo Pants"
+          />
+          <div class="collection-overlay">
+            <h3>CARGO PANTS</h3>
+            <p>Multi-strap tactical utility pants.</p>
+            <a href="#shop" class="collection-link" data-filter-category="pants"
+              >View Drop <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid / Shop Section -->
+    <section class="shop-section" id="shop">
+      <div class="section-header reveal-element">
+        <h2 class="section-title">ALL DROPS</h2>
+        <div class="section-subtitle">
+          Filter by category to explore specific design drops.
+        </div>
+      </div>
+
+      <div class="filter-wrapper reveal-element">
+        <div class="filter-tabs">
+          <button class="filter-tab-btn active" data-filter="all">
+            ALL DROPS
+          </button>
+          <button class="filter-tab-btn" data-filter="hoodie">HOODIES</button>
+          <button class="filter-tab-btn" data-filter="tshirt">T-SHIRTS</button>
+          <button class="filter-tab-btn" data-filter="pants">PANTS</button>
+          <button class="filter-tab-btn" data-filter="outerwear">
+            OUTERWEAR
+          </button>
+          <button class="filter-tab-btn" data-filter="accessories">
+            ACCESSORIES
+          </button>
+        </div>
+        <div class="grid-status">
+          Showing <span id="displayedProductsCount">0</span> of
+          <span id="totalProductsCount">0</span> items
+        </div>
+      </div>
+
+      <div class="shop-grid" id="productsShopGrid">
+        <!-- JS dynamically injects products here -->
+      </div>
+    </section>
+
+    <!-- Lookbook Section -->
+    <section class="lookbook-section">
+      <div class="section-header reveal-element">
+        <h2 class="section-title">STREET ARCHIVES</h2>
+        <div class="section-subtitle">
+          Visual field reports capturing AGHORA in high-contrast urban
+          landscapes.
+        </div>
+      </div>
+
+      <div class="lookbook-grid reveal-element">
+        <div class="lookbook-item">
+          <img
+            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80"
+            alt="Street Look 1"
+          />
+          <div class="lookbook-hover-info"></div>
+          <div class="lookbook-hover-text">
+            <h4>STREET ARCHIVE // L01</h4>
+            <p>Heavy Outerwear - NY Core</p>
+          </div>
+        </div>
+        <div class="lookbook-item">
+          <img
+            src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800&q=80"
+            alt="Street Look 2"
+          />
+          <div class="lookbook-hover-info"></div>
+          <div class="lookbook-hover-text">
+            <h4>STREET ARCHIVE // L02</h4>
+            <p>Loose Fits & Graphic Alignments</p>
+          </div>
+        </div>
+        <div class="lookbook-item">
+          <img
+            src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&q=80"
+            alt="Street Look 3"
+          />
+          <div class="lookbook-hover-info"></div>
+          <div class="lookbook-hover-text">
+            <h4>STREET ARCHIVE // L03</h4>
+            <p>High Fashion Industrial Contrast</p>
+          </div>
+        </div>
+        <div class="lookbook-item">
+          <img
+            src="https://images.unsplash.com/photo-1485968579169-a6b2e8bb5c5a?w=800&q=80"
+            alt="Street Look 4"
+          />
+          <div class="lookbook-hover-info"></div>
+          <div class="lookbook-hover-text">
+            <h4>STREET ARCHIVE // L04</h4>
+            <p>Layering & Tech Straps</p>
+          </div>
+        </div>
+        <div class="lookbook-item">
+          <img
+            src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=800&q=80"
+            alt="Street Look 5"
+          />
+          <div class="lookbook-hover-info"></div>
+          <div class="lookbook-hover-text">
+            <h4>STREET ARCHIVE // L05</h4>
+            <p>Concrete Neutral Coordinates</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Metatext Watermark Section -->
+    <section class="about-section" id="about">
+      <div class="about-background-watermark">AGHORA</div>
+      <div class="about-inner reveal-element">
+        <div class="about-tag">DESIGN ARCHITECTURE</div>
+        <h2 class="about-quote">
+          WE DO NOT MAKE CLOTHES.<br />WE CRAFT <span>ARMOR</span> FOR THE
+          CONCRETE JUNGLE.
+        </h2>
+        <p class="about-para">
+          AGHORA is an independent design laboratory expressing the raw friction
+          of contemporary urban life. We combine technical construction methods,
+          heavy-grade structural fabrics, and conceptual cybernetic print
+          assets. Created for creators, dreamers, and rule-breakers.
+        </p>
+      </div>
+    </section>
+
+    <!-- Newsletter Drops Registry Section -->
+    <section class="newsletter-section" id="contact">
+      <div class="news-glow"></div>
+      <div class="newsletter-inner reveal-element">
+        <h2>ACCESS THE MOVEMENT</h2>
+        <p>
+          Join the registry to unlock access to private drop schedules, limited
+          runs, and archive restocks.
+        </p>
+        <form id="newsletterRegisterForm" class="newsletter-form-container">
+          <input
+            type="email"
+            class="newsletter-input"
+            id="newsletterEmailInput"
+            placeholder="ENTER YOUR EMAIL ADRESS"
+            required
+          />
+          <button type="submit" class="newsletter-submit-btn">SUBMIT</button>
+        </form>
+        <div class="news-success-toast" id="newsSuccessToast">
+          <i class="fas fa-check-circle"></i> WELCOME TO THE MOVEMENT. CHECK
+          YOUR INBOX.
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <h3>AGH<span>O</span>RA</h3>
+          <p>
+            Premium functional streetwear designed in the urban core. Expressing
+            subculture dynamics through physical layers.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="TikTok"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="#" class="social-link" aria-label="YouTube"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>NAVIGATION</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>CLIENT SERVICES</h4>
+          <ul>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Size Chart Guide</a></li>
+            <li><a href="#">FAQ & Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>COMMUNICATION</h4>
+          <ul>
+            <li><a href="mailto:hello@aghora.com">hello@aghora.com</a></li>
+            <li><a href="#">+1 (555) 000-AGHORA</a></li>
+            <li><a href="#">123 Archive Ave, NY</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 AGHORA. ALL RIGHTS RESERVED. OWN THE STREETS.
+        </div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar Drawer -->
+    <div class="cart-sidebar-drawer" id="cartSidebarDrawer">
+      <div class="cart-drawer-header">
+        <h3>SHOPPING CART</h3>
+        <button class="cart-drawer-close-btn" id="cartDrawerCloseBtn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-drawer-items-list" id="cartDrawerItemsList">
+        <!-- JS dynamically injects cart items here -->
+      </div>
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-block">
+          <span class="cart-subtotal-label">SUBTOTAL:</span>
+          <span class="cart-subtotal-value" id="cartSubtotalAmount">$0.00</span>
+        </div>
+        <button class="cart-checkout-cta" id="cartCheckoutBtn">
+          PROCEED TO CHECKOUT
+        </button>
+      </div>
+    </div>
+
+    <!-- Cart Backdrop Shield -->
+    <div class="cart-backdrop-shield" id="cartBackdropShield"></div>
+
+    <!-- Quick View Detail Modal -->
+    <div class="quickview-modal-container" id="quickViewModal">
+      <div class="quickview-modal-backdrop" id="quickViewBackdrop"></div>
+      <div class="quickview-modal-window">
+        <button class="quickview-close-trigger" id="quickViewCloseBtn">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="quickview-media-col">
+          <img id="modalProductImage" src="" alt="Product Image" />
+        </div>
+        <div class="quickview-details-col">
+          <div class="quickview-cat" id="modalProductCategory">CATEGORY</div>
+          <h3 class="quickview-name" id="modalProductName">PRODUCT NAME</h3>
+          <div class="quickview-price" id="modalProductPrice">$0.00</div>
+          <p class="quickview-desc" id="modalProductDesc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id
+            convallis urna. Proin hendrerit accumsan eros, non porta purus
+            facilisis sit amet.
+          </p>
+
+          <div class="quickview-size-header">
+            <span>SELECT SIZE</span>
+            <span style="color: var(--text-muted)" id="sizeGuideLink"
+              >SIZE GUIDE</span
+            >
+          </div>
+
+          <div class="size-select-grid">
+            <button class="size-option-btn" data-size="S">S</button>
+            <button class="size-option-btn active" data-size="M">M</button>
+            <button class="size-option-btn" data-size="L">L</button>
+            <button class="size-option-btn" data-size="XL">XL</button>
+            <button class="size-option-btn" data-size="XXL">XXL</button>
+          </div>
+
+          <button class="quickview-add-cta" id="modalAddToCartBtn">
+            ADD TO BAG
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamic Toast Notification Container -->
+    <div id="toast-wrapper"></div>
+
+    <!-- JS Logic Script -->
+    <script src="app.js" defer></script>
+  </body>
+</html>
